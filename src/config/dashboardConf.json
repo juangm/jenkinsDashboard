@@ -1,0 +1,8 @@
+{
+  "environment": "production",
+  "buildCards": true,
+  "relativeTime": false,
+  "showOptions": false,
+  "force": false,
+  "buildsPerJobCount": 6
+}

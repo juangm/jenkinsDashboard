@@ -1,0 +1,81 @@
+body {
+    overflow-y: scroll;
+}
+
+h1, h2 {
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+a {
+    color: #42b983;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.inline-block-mid {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.inactive {
+    cursor: default;
+    pointer-events: none;
+}
+
+
+@keyframes flash {
+    40% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.bg {
+    &-success {
+        background-color: #62c278 !important;
+    }
+    &-success-light {
+        background-color: #92d19e !important;
+    }
+    &-danger {
+        background-color: #d1767e !important;
+    }
+}
+
+.nowrap-lg {
+    @media screen and (min-width: 1250px) {
+        white-space: nowrap;
+    }
+}
+
+.box-shadow-bottom-1 {
+    box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 1;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}
+
+
